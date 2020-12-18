@@ -1,7 +1,5 @@
 import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Link } from "react-router-dom";
-
 import GithubProfiles from "./components/GithubProfiles/GithubProfiles";
 import BookList from "./components/Books/BookList";
 import Reminders from "./components/Reminders";
