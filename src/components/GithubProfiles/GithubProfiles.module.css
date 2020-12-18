@@ -1,18 +1,10 @@
-body {
-  background: linear-gradient(
-    90deg,
-    #9e03baa6 0%,
-    #097579af 35%,
-    #00d5ff9e 100%
-  );
-}
 .ProfilesList {
   width: 200vw;
   max-width: 1170px;
   margin: auto;
   display: grid;
   gap: 10rem;
-  background: linear-gradient(90deg, #a003ba 0%, #097579 35%, #00d4ff 100%);
+  background: linear-gradient(90deg, #a003ba 0%, #f0f328 35%, #00d4ff 100%);
   border-radius: 5rem;
   padding: 5rem 10rem;
   list-style: none;
