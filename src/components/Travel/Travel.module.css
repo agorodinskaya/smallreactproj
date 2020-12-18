@@ -1,0 +1,62 @@
+.Loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Loader > span {
+  background: #006cfa;
+  border-radius: 50%;
+  margin: 5rem 0.5rem;
+  animation: bouncingLoader 0.5s infinite alternate;
+}
+
+.Loader > span:nth-child(odd) {
+  animation-delay: 0.2s;
+}
+
+.Loader > span:nth-child(even) {
+  animation-delay: 0.8s;
+}
+.Loader > h1 {
+  animation: colorChange 0.6s infinite alternate;
+}
+
+@keyframes bouncingLoader {
+  from {
+    width: 0.5rem;
+    height: 0.5rem;
+    opacity: 0.5;
+    background: linear-gradient(
+      90deg,
+      #2fcef270 45%,
+      #c316f79c 45%,
+      #e22ff270 45%
+    );
+    transform: translate3d(0);
+  }
+  to {
+    width: 0.5rem;
+    height: 0.5rem;
+    opacity: 1;
+    background: linear-gradient(
+      90deg,
+      #0dddec63 50%,
+      #c316f7 65%,
+      #e22ff270 45%
+    );
+    transform: translate3d(0, -1rem, 0);
+  }
+}
+@keyframes colorChange {
+  from {
+    opacity: 0.5;
+    text-shadow: 0.04em 0.05em #115fd496;
+    color: #00fafa;
+  }
+  to {
+    opacity: 1;
+    text-shadow: 0.05em 0.06em #4e066483;
+    color: #9e00fa;
+  }
+}
