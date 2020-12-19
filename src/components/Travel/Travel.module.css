@@ -11,13 +11,13 @@
   animation: bouncingLoader 0.5s infinite alternate;
 }
 
-.Loader > span:nth-child(odd) {
+/* .Loader > span:nth-child(odd) {
   animation-delay: 0.2s;
 }
 
 .Loader > span:nth-child(even) {
   animation-delay: 0.8s;
-}
+} */
 .Loader > h1 {
   animation: colorChange 0.6s infinite alternate;
 }
@@ -26,25 +26,15 @@
   from {
     width: 0.5rem;
     height: 0.5rem;
-    opacity: 0.5;
-    background: linear-gradient(
-      90deg,
-      #2fcef270 45%,
-      #c316f79c 45%,
-      #e22ff270 45%
-    );
+    opacity: 0.4;
+    background: linear-gradient(90deg, #1900fa 55%, #29f716 45%);
     transform: translate3d(0);
   }
   to {
     width: 0.5rem;
     height: 0.5rem;
-    opacity: 1;
-    background: linear-gradient(
-      90deg,
-      #0dddec63 50%,
-      #c316f7 65%,
-      #e22ff270 45%
-    );
+    opacity: 0.7;
+    background: linear-gradient(90deg, #00fafa 45%, #c316f7 55%);
     transform: translate3d(0, -1rem, 0);
   }
 }
