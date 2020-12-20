@@ -10,7 +10,7 @@ const NavBar = () => {
         <li>Reminder</li>
       </Link>
       <Link to='/githubprof'>
-        <li>Githib</li>
+        <li>Github</li>
       </Link>
     </ul>
   );
