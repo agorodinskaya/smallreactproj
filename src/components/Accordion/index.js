@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Questions from "./Question";
 import questions from "./data";
 import classes from "./Questions.module.css";
