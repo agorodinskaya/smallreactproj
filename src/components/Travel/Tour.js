@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import classes from "./Travel.module.css";
+
 const Tour = ({ id, image, info, price, name, removeTour }) => {
   const [readMore, setReadMore] = useState(false);
   return (

@@ -1,12 +1,15 @@
 import "./App.css";
 
 // import Reminders from "./components/Reminders";
-import Travel from "./components/Travel";
+// import Travel from "./components/Travel";
+import Opinions from "./components/Opinions";
+
 const ReactRouterSetup = () => {
   return (
     <>
       {/* <Reminders /> */}
-      <Travel />
+      {/* <Travel /> */}
+      <Opinions />
     </>
   );
 };
