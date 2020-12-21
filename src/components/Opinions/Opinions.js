@@ -5,7 +5,7 @@ import reviews from "./data";
 
 const Opinion = () => {
   const [index, setIndex] = useState(0);
-  const { id, name, job, image, text } = reviews[index];
+  const { name, job, image, text } = reviews[index];
 
   const checkLen = (num) => {
     if (num > reviews.length - 1) {
