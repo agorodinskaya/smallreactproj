@@ -193,10 +193,9 @@ Menu
   height: 100%;
   width: 100%;
   border: 0.25rem solid;
-  border-image-slice: 1;
+  border-image-slice: 3;
   border-width: 5px;
   border-image-source: linear-gradient(#a331e5, #31e5c7, #ec04f4);
-
   border-radius: var(--radius);
   display: block;
 }
