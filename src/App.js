@@ -5,7 +5,8 @@ import "./App.css";
 // import Opinions from "./components/Opinions";
 // import DisplayQuestion from "./components/Accordion";
 // import DisplayMenu from "./components/Menu";
-import DisplayTabs from "./components/Tabs";
+// import DisplayTabs from "./components/Tabs";
+import DisplaySlider from "./components/Slider";
 
 const ReactRouterSetup = () => {
   return (
@@ -15,7 +16,8 @@ const ReactRouterSetup = () => {
       {/* <Opinions /> */}
       {/* <DisplayQuestion /> */}
       {/* <DisplayMenu /> */}
-      <DisplayTabs />
+      {/* <DisplayTabs /> */}
+      <DisplaySlider />
     </>
   );
 };
