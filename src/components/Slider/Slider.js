@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Alt from "./Alt";
+
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { FaQuoteRight } from "react-icons/fa";
 import classes from "./Slider.module.css";
