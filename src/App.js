@@ -8,7 +8,6 @@ import "./App.css";
 // import DisplayTabs from "./components/Tabs";
 // import DisplaySlider from "./components/Slider";
 import DisplayColors from "./components/ColorGen";
-import Display from "./components/Opinions";
 
 const ReactRouterSetup = () => {
   return (
