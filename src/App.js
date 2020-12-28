@@ -6,7 +6,9 @@ import "./App.css";
 // import DisplayQuestion from "./components/Accordion";
 // import DisplayMenu from "./components/Menu";
 // import DisplayTabs from "./components/Tabs";
-import DisplaySlider from "./components/Slider";
+// import DisplaySlider from "./components/Slider";
+import DisplayColors from "./components/ColorGen";
+import Display from "./components/Opinions";
 
 const ReactRouterSetup = () => {
   return (
@@ -17,7 +19,8 @@ const ReactRouterSetup = () => {
       {/* <DisplayQuestion /> */}
       {/* <DisplayMenu /> */}
       {/* <DisplayTabs /> */}
-      <DisplaySlider />
+      {/* <DisplaySlider /> */}
+      <DisplayColors />
     </>
   );
 };
