@@ -26,7 +26,7 @@ const ColorGen = () => {
             type='text'
             value={color}
             onChange={(e) => setColor(e.target.value)}
-            placeholder='#f15025'
+            placeholder='#FF69B4'
             className={err ? classes.Error : null}
           />
           <button type='submit' className={classes.Btn}>

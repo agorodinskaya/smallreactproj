@@ -7,8 +7,8 @@ import "./App.css";
 // import DisplayMenu from "./components/Menu";
 // import DisplayTabs from "./components/Tabs";
 // import DisplaySlider from "./components/Slider";
-import DisplayColors from "./components/ColorGen";
-
+// import DisplayColors from "./components/ColorGen";
+import DisplayMarkDown from "./components/MarkDownPrev";
 const ReactRouterSetup = () => {
   return (
     <>
@@ -19,7 +19,8 @@ const ReactRouterSetup = () => {
       {/* <DisplayMenu /> */}
       {/* <DisplayTabs /> */}
       {/* <DisplaySlider /> */}
-      <DisplayColors />
+      {/* <DisplayColors /> */}
+      <DisplayMarkDown />
     </>
   );
 };
