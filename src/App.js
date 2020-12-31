@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 
 // import Reminders from "./components/Reminders";
 // import Travel from "./components/Travel";
@@ -9,7 +8,8 @@ import "./App.css";
 // import DisplayTabs from "./components/Tabs";
 // import DisplaySlider from "./components/Slider";
 // import DisplayColors from "./components/ColorGen";
-import DisplayMarkDown from "./components/MarkDownPrev";
+// import DisplayMarkDown from "./components/MarkDownPrev";
+import Display from "./components/Submenues";
 const ReactRouterSetup = () => {
   return (
     <>
@@ -21,7 +21,8 @@ const ReactRouterSetup = () => {
       {/* <DisplayTabs /> */}
       {/* <DisplaySlider /> */}
       {/* <DisplayColors /> */}
-      <DisplayMarkDown />
+      {/* <DisplayMarkDown /> */}
+      <Display />
     </>
   );
 };

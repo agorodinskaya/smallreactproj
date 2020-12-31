@@ -7,7 +7,7 @@ Variables
 :root {
   /* dark shades of primary color*/
   --clr-primary-1: hsl(205, 86%, 17%);
-  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-2: hsla(302, 75%, 40%, 0.575);
   --clr-primary-3: hsl(205, 72%, 37%);
   --clr-primary-4: hsl(205, 63%, 48%);
   /* primary/main color */
@@ -17,7 +17,7 @@ Variables
   --clr-primary-7: hsl(205, 90%, 76%);
   --clr-primary-8: hsl(205, 86%, 81%);
   --clr-primary-9: hsl(205, 90%, 88%);
-  --clr-primary-10: hsl(205, 100%, 96%);
+  --clr-primary-10: hsl(320, 74%, 36%);
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);
@@ -43,9 +43,14 @@ Variables
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
   --fixed-width: 620px;
-  --clr-bcg: #6da5ee65;
-  --clr-font: #06113b;
-  --clr-primary: #0e3e8550;
+  --gradient: linear-gradient(
+    90deg,
+    #c316f7ef,
+    #fddb1d63,
+    #ee0987,
+    #1db6fd5d,
+    #f562e1c6
+  );
 }
 /*
 =============== 
@@ -53,17 +58,7 @@ Global Styles
 ===============
 */
 
-.DarkTheme {
-  --clr-bcg: #140555;
-  --clr-font: #2fbde0;
-  --clr-primary: #365fe659;
-}
-.LightTheme {
-  --clr-bcg: #6da5ee65;
-  --clr-font: #06113b;
-  --clr-primary: #0e3e8550;
-}
-
+*,
 ::after,
 ::before {
   margin: 0;
@@ -73,13 +68,11 @@ Global Styles
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: var(--clr-bcg);
-  color: var(--clr-font);
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
 }
-
-*,
 ul {
   list-style-type: none;
 }
@@ -96,7 +89,7 @@ h4 {
   margin-bottom: 0.75rem;
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 h2 {
   font-size: 2rem;
@@ -109,11 +102,11 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-3);
+  color: var(--clr-grey-5);
 }
 @media screen and (min-width: 800px) {
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   h2 {
     font-size: 2.5rem;
@@ -151,69 +144,14 @@ p {
 
 /*
 =============== 
-Markdown
+Stripe Styles
 ===============
 */
-.Markdown {
-  padding: 4rem;
-  display: grid;
-  row-gap: 4rem;
-}
-.Input {
-  border-color: transparent;
-  border-radius: var(--radius);
-  font-size: 1.2rem;
-  line-height: 2;
-  box-shadow: var(--dark-shadow);
-  min-height: 30vh;
-}
-.Input,
-.Result {
-  padding: 1rem 2rem;
-}
 
-@media screen and (min-width: 992px) {
-  .Markdown {
-    min-height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 4rem;
-  }
-}
-/* unique styles */
-img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-}
-blockquote {
-  font-size: 2rem;
-  font-style: italic;
-  border-left: 5px solid var(--clr-grey-5);
-  color: var(--clr-grey-5);
-  padding-left: 2rem;
-  line-height: 2;
-  margin-bottom: 1.5rem;
-}
-blockquote ::first-letter {
-  text-transform: uppercase;
-}
-pre {
-  background: #222;
-  display: inline-block;
-  border-radius: var(--radius);
-  padding: 1rem 2rem;
-  color: yellow;
-  margin-bottom: 1.5rem;
-}
-.Btn {
-  background: var(--clr-primary);
-  color: var(--clr-font);
-  padding: 0.25rem 0.5rem;
-  border-radius: 5px;
-  border-color: transparent;
-  text-transform: capitalize;
-  transition: all 0.3s linear;
-  font-weight: bold;
-  letter-spacing: 2px;
-  cursor: pointer;
-}
+/* nav media query */
+
+/* hero media query */
+
+/* sidebar */
+
+/* links */
