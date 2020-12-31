@@ -6,7 +6,7 @@
   background: transparent;
   position: fixed;
   z-index: 1;
-  color: var(--clr-primary-8);
+  /* color: var(--clr-primary-10); */
 }
 .NavCenter {
   width: 90vw;
@@ -35,9 +35,16 @@
   display: none;
 }
 .SigninBtn {
-  display: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background: #dddddd3f;
   border-radius: var(--radius);
+}
+
+.SigninBtn > span {
+  padding: 5px;
 }
 
 @media screen and (min-width: 800px) {

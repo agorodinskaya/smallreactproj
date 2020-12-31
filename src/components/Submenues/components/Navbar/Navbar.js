@@ -30,8 +30,10 @@ const Navbar = () => {
         </ul>
 
         <button className={`${classes.Btn} ${classes.SigninBtn}`}>
-          Sign in
-          <FaArrowRight />
+          <span>Sign in</span>
+          <span>
+            <FaArrowRight />
+          </span>
         </button>
       </div>
     </nav>
