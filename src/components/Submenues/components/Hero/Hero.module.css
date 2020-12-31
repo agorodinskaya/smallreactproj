@@ -58,7 +58,7 @@
   background-image: var(--gradient);
   transform: skewY(-3deg);
   transform-origin: top left;
-  animation: AnimationName 30s ease infinite;
+  animation: hero-animation 30s ease infinite;
 }
 
 h1 {
@@ -73,7 +73,7 @@ header h1 {
   color: white;
 }
 
-@keyframes AnimationName {
+@keyframes hero-animation {
   0% {
     background-position: 0% 50%;
   }
