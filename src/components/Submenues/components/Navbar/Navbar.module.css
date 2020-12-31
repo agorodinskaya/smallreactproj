@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   background: transparent;
-  position: relative;
+  position: fixed;
   z-index: 1;
   color: var(--clr-primary-8);
 }
@@ -17,6 +17,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .Btn {
   font-size: 1rem;
   padding: 0.25rem 0.75rem;
@@ -28,13 +29,15 @@
   transition: var(--transition);
 }
 .Btn:hover {
-  background: var(--clr-grey-5);
+  background-color: #faebeb4d;
 }
 .NavLinks {
   display: none;
 }
 .SigninBtn {
   display: none;
+  background: #dddddd3f;
+  border-radius: var(--radius);
 }
 
 @media screen and (min-width: 800px) {
