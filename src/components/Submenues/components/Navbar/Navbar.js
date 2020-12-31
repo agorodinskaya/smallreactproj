@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Navbar.module.css";
 import "../../index.css";
-import { FaBars, FaArrowRight, FaArrowCircleRight } from "react-icons/fa";
+import { FaBars, FaArrowRight } from "react-icons/fa";
 
 const Navbar = () => {
   return (
