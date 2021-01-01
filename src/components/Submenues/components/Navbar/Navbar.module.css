@@ -17,14 +17,17 @@
   justify-content: space-between;
   align-items: center;
 }
-
+.NavLogo {
+  width: 90px;
+  margin: 2rem;
+}
 .Btn {
   font-size: 1rem;
   padding: 0.25rem 0.75rem;
   border-radius: var(--radius);
   border-color: transparent;
   color: white;
-  background: var(--clr-black);
+  background: #8a2ee065;
   cursor: pointer;
   transition: var(--transition);
 }
@@ -35,16 +38,7 @@
   display: none;
 }
 .SigninBtn {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background: #dddddd3f;
-  border-radius: var(--radius);
-}
-
-.SigninBtn > span {
-  padding: 5px;
+  display: none;
 }
 
 @media screen and (min-width: 800px) {
@@ -56,9 +50,20 @@
   .ToggleBtn {
     display: none;
   }
+
   .SigninBtn {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #dddddd3f;
+    border-radius: var(--radius);
   }
+
+  .SigninBtn > span {
+    margin: 5px;
+  }
+
   .NavLinks {
     display: block;
     justify-self: center;

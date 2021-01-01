@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Navbar.module.css";
 import "../../index.css";
+import logo from "../../assets/Stripe wordmark - white.svg";
 import { FaBars, FaArrowRight } from "react-icons/fa";
 
 const Navbar = () => {
@@ -8,12 +9,8 @@ const Navbar = () => {
     <nav className={classes.Nav}>
       <div className={classes.NavCenter}>
         <div className={classes.NavHeader}>
-          <img
-            src='../../assets/Stripe wordmark - blurple'
-            className={classes.NavLogo}
-            alt=''
-          />
-          <button className={classes.ToggleBtn}>
+          <img src={logo} alt='logo' className={classes.NavLogo} />
+          <button className={`${classes.Btn} ${classes.ToggleBtn} `}>
             <FaBars />
           </button>
         </div>
