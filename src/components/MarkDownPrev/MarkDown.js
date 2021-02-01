@@ -26,7 +26,7 @@ const MarkDown = () => {
     localStorage.setItem("theme", theme);
   }, [theme]);
   return (
-    <main>
+    <main className={classes.Main}>
       <button className={classes.Btn} onClick={toggleTheme}>
         toggle
       </button>

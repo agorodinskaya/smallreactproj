@@ -7,7 +7,7 @@ Variables
 :root {
   /* dark shades of primary color*/
   --clr-primary-1: hsl(205, 86%, 17%);
-  --clr-primary-2: hsla(302, 75%, 40%, 0.575);
+  --clr-primary-2: hsl(205, 77%, 27%);
   --clr-primary-3: hsl(205, 72%, 37%);
   --clr-primary-4: hsl(205, 63%, 48%);
   /* primary/main color */
@@ -17,7 +17,7 @@ Variables
   --clr-primary-7: hsl(205, 90%, 76%);
   --clr-primary-8: hsl(205, 86%, 81%);
   --clr-primary-9: hsl(205, 90%, 88%);
-  --clr-primary-10: hsla(320, 74%, 36%, 0.075);
+  --clr-primary-10: hsl(205, 100%, 96%);
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);
@@ -43,6 +43,9 @@ Variables
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
   --fixed-width: 620px;
+  --clr-bcg: #6da5ee65;
+  --clr-font: #06113b;
+  --clr-primary: #0e3e8550;
   --gradient: linear-gradient(
     90deg,
     #c316f7ef,
@@ -58,8 +61,7 @@ Global Styles
 ===============
 */
 
-*,
-::after,
+*/ ::after,
 ::before {
   margin: 0;
   padding: 0;
@@ -68,11 +70,13 @@ Global Styles
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: var(--clr-grey-10);
-  color: var(--clr-grey-1);
+  /* background: var(--clr-bcg); */
+  color: var(--clr-font);
   line-height: 1.5;
   font-size: 0.875rem;
 }
+
+*,
 ul {
   list-style-type: none;
 }
@@ -89,7 +93,7 @@ h4 {
   margin-bottom: 0.75rem;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 h2 {
   font-size: 2rem;
@@ -102,11 +106,11 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
+  color: var(--clr-grey-3);
 }
 @media screen and (min-width: 800px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   h2 {
     font-size: 2.5rem;
