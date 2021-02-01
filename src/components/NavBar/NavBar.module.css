@@ -4,9 +4,9 @@
   font-size: 1.5rem;
 }
 .Item {
-  background: rgba(0, 255, 255, 0.671);
+  background: #00ffffab;
 }
 
 .Item:hover {
-  background: rgba(255, 0, 255, 0.2);
+  background: #ff00ff33;
 }
